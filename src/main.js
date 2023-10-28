@@ -1,4 +1,8 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import Vue from "vue";
+import XypointsDashboard from "./screens/XypointsDashboard.vue";
 
-createApp(App).mount('#app')
+Vue.config.productionTip = false;
+
+new Vue({
+  render: h => h(XypointsDashboard)
+}).$mount("#app");
